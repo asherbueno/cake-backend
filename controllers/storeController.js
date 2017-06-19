@@ -13,7 +13,8 @@ exports.addStore = (req, res) => {
 exports.createStore = async (req, res) => {
   const store = new Store(req.body);
   await store.save();
-  res.redirect('/');
+  req.flash('success', `Successfully Created ${store.name}.`);
+  res.redirect(`/store/${store.slug}`);
 };
 
 //async await = wait for save and then continue next line of code
