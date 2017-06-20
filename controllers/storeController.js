@@ -7,11 +7,11 @@ const uuid = require('uuid');
 const multerOptions = {
   storage: multer.memoryStorage(),
   fileFilter(req, file, next) {
-    const isPhoto = file.mimetype.startWidth('image/');
+    const isPhoto = file.mimetype.startsWith('image/');
     if(isPhoto) {
-        next(null, true);
+      next(null, true);
     } else {
-      next({ message: 'That file type isn\'t allowed!' }, false);
+      next({ message: 'That filetype isn\'t allowed!' }, false);
     }
   }
 };
@@ -27,18 +27,18 @@ exports.addStore = (req, res) => {
 exports.upload = multer(multerOptions).single('photo');
 
 exports.resize = async (req, res, next) => {
-  //check if there is no new file to resize
-  if( !req.file ){
-    next(); //will skip to the next middleware
-    return; //stop function
+  // check if there is no new file to resize
+  if (!req.file) {
+    next(); // skip to the next middleware
+    return;
   }
   const extension = req.file.mimetype.split('/')[1];
   req.body.photo = `${uuid.v4()}.${extension}`;
-  //resize
+  // now we resize
   const photo = await jimp.read(req.file.buffer);
   await photo.resize(800, jimp.AUTO);
   await photo.write(`./public/uploads/${req.body.photo}`);
-  // once photo is written to file system then next
+  // once we have written the photo to our filesystem, keep going!
   next();
 };
 
@@ -64,7 +64,7 @@ exports.editStore = async (req, res) => {
 };
 
 exports.updateStore = async (req, res) => {
-  //set the location data to be a point
+  // set the location data to be a point
   req.body.location.type = 'Point';
   // find and update the store
   const store = await Store.findOneAndUpdate({ _id: req.params.id }, req.body, {
@@ -76,10 +76,14 @@ exports.updateStore = async (req, res) => {
   // Redriect them the store and tell them it worked
 };
 
-exports.getStore] = async (req, res, next) => {
+exports.getStoreBySlug = async (req, res, next) => {
   const store = await Store.findOne({ slug: req.params.slug });
-  if(!store) return next();
+  if (!store) return next();
   res.render('store', { store, title: store.name });
-  }
+};
 
+exports.getStoresByTag = async (req, res) => {
+  const tags = await Store.getTagsList();
+  const tag = req.params.tag;
+  res.render('tag', { tags, title: 'Tags', tag });
 };
