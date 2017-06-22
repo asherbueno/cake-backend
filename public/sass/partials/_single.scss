@@ -22,7 +22,7 @@
         linear-gradient(315deg, hsla(130, 96%, 45%, 1) 100%, hsla(130, 96%, 45%, 0) 70%);
       opacity: 0.6;
       z-index: 1;
-      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%);
+      
     }
   }
   &__image {

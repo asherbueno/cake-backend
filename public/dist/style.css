@@ -8,7 +8,7 @@ body {
   body:before {
     content: '';
     display: block;
-    background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+    background: black;
     height: 10px;
     width: 100%; }
 
@@ -18,6 +18,8 @@ body {
   @media all and (max-width: 900px) {
     .inner {
       padding: 2rem; } }
+  .inner--flashes {
+    padding: 0; }
 
 html {
   box-sizing: border-box; }
@@ -461,11 +463,9 @@ p {
   position: relative;
   z-index: 2;
   margin: 0;
-  font-size: 40px;
+  font-size: 20px;
   z-index: 2;
   line-height: 1.1;
-  -ms-transform: skew(0, -3deg);
-      transform: skew(0, -3deg);
   line-height: 1.1; }
   .title--long {
     font-size: 30px; }
@@ -635,7 +635,7 @@ label {
     .nav__link:hover, .nav__link--active {
       border-bottom-color: rgba(0, 0, 0, 0.2);
       border-right-color: rgba(0, 0, 0, 0.05);
-      background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%) fixed; }
+      background: black; }
       .nav__link:hover svg, .nav__link--active svg {
         -ms-transform: scale(1.2);
             transform: scale(1.2); }
@@ -720,6 +720,7 @@ label {
   .store--wide {
     width: 100%; }
   .store__details {
+    word-wrap: break-word;
     padding: 2rem; }
     .store__details p {
       line-height: 1.2;
@@ -732,7 +733,6 @@ label {
       width: 100%; } }
 
 .store__actions {
-  position: relative;
   z-index: 2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -767,11 +767,9 @@ label {
     width: 100%;
     top: 0;
     right: 0;
-    background: linear-gradient(45deg, #05b3d6 0%, rgba(5, 179, 214, 0) 70%), linear-gradient(135deg, #0958ec 10%, rgba(9, 88, 236, 0) 80%), linear-gradient(225deg, #d209ec 10%, rgba(210, 9, 236, 0) 80%), linear-gradient(315deg, #05e129 100%, rgba(5, 225, 41, 0) 70%);
-    opacity: 0.6;
-    z-index: 1;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+    background: none;
+    opacity: 0.1;
+    z-index: 1; }
   .store__hero img {
     height: 100%;
     width: 100%;
@@ -779,9 +777,7 @@ label {
     right: 0;
     position: absolute;
     left: 0;
-    object-fit: cover;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); }
+    object-fit: cover; }
 
 .tags {
   margin: 0;
@@ -859,9 +855,7 @@ label {
     right: 0;
     background: linear-gradient(45deg, #05b3d6 0%, rgba(5, 179, 214, 0) 70%), linear-gradient(135deg, #0958ec 10%, rgba(9, 88, 236, 0) 80%), linear-gradient(225deg, #d209ec 10%, rgba(210, 9, 236, 0) 80%), linear-gradient(315deg, #05e129 100%, rgba(5, 225, 41, 0) 70%);
     opacity: 0.6;
-    z-index: 1;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%); }
+    z-index: 1; }
 
 .single__image {
   width: 100%;
