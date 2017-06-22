@@ -22,5 +22,5 @@ exports.siteName = `CaKe`;
 
 exports.menu = [
   { slug: '/stores', title: 'Inventory', icon: 'store', },
-  { slug: '/add', title: 'Add', icon: 'add', },
+  { slug: '/add', title: 'Add Inventory', icon: 'add', },
 ];

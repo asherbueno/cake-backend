@@ -809,7 +809,8 @@ label {
         background: #e6e6e6;
         padding: 1rem 1rem 1rem 4rem; }
       .tag__choice input:checked + label {
-        background: #FFC40E; }
+        background: black;
+        color: white; }
   .tag__link {
     background: #FFC40E;
     color: #303030;
@@ -1088,8 +1089,8 @@ label {
 
 .button {
   border: 0;
-  background: #FFC40E;
-  color: #303030;
+  background: #303030;
+  color: white;
   font-family: 'Panama';
   font-weight: 600; }
 

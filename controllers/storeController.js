@@ -21,7 +21,7 @@ exports.homePage = (req, res) => {
 };
 
 exports.addStore = (req, res) => {
-  res.render('editStore', { title: 'Add Store' });
+  res.render('editStore', { title: 'Add Inventory' });
 };
 
 exports.upload = multer(multerOptions).single('photo');
@@ -44,14 +44,14 @@ exports.resize = async (req, res, next) => {
 
 exports.createStore = async (req, res) => {
   const store = await (new Store(req.body)).save();
-  req.flash('success', `Successfully Created ${store.name}. Care to leave a review?`);
-  res.redirect(`/store/${store.slug}`);
+  req.flash('success', `Successfully Added: ${store.name}. `);
+  res.redirect('/');
 };
 
 exports.getStores = async (req, res) => {
   // 1. Query the database for a list of all stores
   const stores = await Store.find();
-  res.render('stores', { title: 'Stores', stores });
+  res.render('stores', { title: 'Inventory', stores });
 };
 
 exports.editStore = async (req, res) => {
