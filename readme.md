@@ -1,27 +1,58 @@
-## What is this?
+# Project #3
+## Real world application for a local organisation or business.
 
-Just you wait folks!
+### Description
+You are to design, build, deploy and present an application built for a real world customer. Meet with the business owner or organisation manager to find out what challenges they face. Find a problem that you can solve with an application and present your ideas to the client.
 
-## Sample Data
+### Client interaction
+Demonstrate your ability to satisfy your client with the quality of your work and high level of service.
 
-To load sample data, run the following command in your terminal:
+# Client Interaction
+## Information Gathering
+### Requirements
+### Constraints
+### Risks
 
-```bash
-npm run sample
-```
+## Project Charter
 
-If you have previously loaded in this data, you can wipe your database 100% clean with:
+### Preliminary Statement 
+### Project Scope
+### Sign-Off
 
-```bash
-npm run blowitallaway
-```
+### Work Breakdown
+### Schedule
+### Budget
 
-That will populate 16 stores with 3 authors and 41 reviews. The logins for the authors are as follows:
+## Project Management Plan
 
-|Name|Email (login)|Password|
-|---|---|---|
-|Wes Bos|wes@example.com|wes|
-|Debbie Downer|debbie@example.com|debbie|
-|Beau|beau@example.com|beau|
+## Post Project Review
+## Client Questionnaire
 
+# Application Design
+## Problem Definition
+## Problem Solution
 
+## Client Technology
+## Development Tools
+## Platform for writing the UI
+
+## User Journeys
+
+## Wireframes
+
+## User Stories
+
+## Entity Relationship Diagram
+
+## Project Plan and Effort Estimation
+
+# Tools and Methodologies
+
+## Trello
+## Communication
+## Code Review
+## Github
+## Agile Development
+## Code Quality Tools
+
+# Coming Soon!
