@@ -37,18 +37,27 @@ Project is not completed to the standard I set on myself. Still needs require wo
 - NodeJS: Back End
 - MongoDB: Hosting
 
-## Wireframes
+## Wireframes & User Journeys
+
+# LANDING PAGE
+Simple landing page with a hero image and ENTER button.
+<img width="861" alt="screen shot 2017-06-23 at 01 18 07" src="https://user-images.githubusercontent.com/25731534/27442129-baa7f5fa-57b2-11e7-8f43-057f68e5d9c7.png">
+
+# SIGN UP
+Sign up page only requiring name, email and password.
+<img width="491" alt="screen shot 2017-06-23 at 01 22 41" src="https://user-images.githubusercontent.com/25731534/27442127-ba9b6f56-57b2-11e7-99f0-23adf3b5d676.png">
+
+# LOOKBOOK
+Simplistic look book that focuses on images also no text descriptions.
+<img width="490" alt="screen shot 2017-06-23 at 01 20 45" src="https://user-images.githubusercontent.com/25731534/27442130-baa88f92-57b2-11e7-8a1d-a723d59ea5b8.png">
+
+# LOOKBOOK DETAILED
+When image is clicked on a lookbook page. It goes to this page and has description of what the clothes is made from such as what material etc... Higher Quality Images will be displayed.
+<img width="829" alt="screen shot 2017-06-23 at 01 19 40" src="https://user-images.githubusercontent.com/25731534/27442128-baa428f8-57b2-11e7-981c-d8b1fa2248ad.png">
+
 # STOCKISTS
 This screen shows a google map image on where the product is stocked.
 <img width="624" alt="screen shot 2017-06-23 at 01 24 02" src="https://user-images.githubusercontent.com/25731534/27442125-ba5dd538-57b2-11e7-95d1-9ec1e1f46d47.png">
-
-<img width="491" alt="screen shot 2017-06-23 at 01 22 41" src="https://user-images.githubusercontent.com/25731534/27442127-ba9b6f56-57b2-11e7-99f0-23adf3b5d676.png">
-<img width="490" alt="screen shot 2017-06-23 at 01 20 45" src="https://user-images.githubusercontent.com/25731534/27442130-baa88f92-57b2-11e7-8a1d-a723d59ea5b8.png">
-<img width="829" alt="screen shot 2017-06-23 at 01 19 40" src="https://user-images.githubusercontent.com/25731534/27442128-baa428f8-57b2-11e7-981c-d8b1fa2248ad.png">
-<img width="861" alt="screen shot 2017-06-23 at 01 18 07" src="https://user-images.githubusercontent.com/25731534/27442129-baa7f5fa-57b2-11e7-8f43-057f68e5d9c7.png">
-
-
-## User Stories
 
 ## Entity Relationship Diagram
 
@@ -64,3 +73,7 @@ This screen shows a google map image on where the product is stocked.
 ## Code Quality Tools
 
 # Coming Soon!
+- Search Function
+- Edit Items
+- Edit User Account
+- Connect backend to front end
